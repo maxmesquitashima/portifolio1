@@ -162,6 +162,26 @@ header .container {
   box-shadow: var(--hover-shadow);
 }
 
+.hero-image {
+  flex-shrink: 0; /* Impede que a imagem diminua */
+  width: 300px; /* Tamanho fixo para a imagem */
+  height: 300px; /* Altura fixa para a imagem */
+  border-radius: 50%; /* Torna a imagem circular */
+  overflow: hidden; /* Garante que a imagem cortada seja circular */
+  border: 3px solid var(--highlight-color); /* Adiciona uma borda */
+  box-shadow: var(--hover-shadow); /* Adiciona uma sombra neon */
+  display: flex; /* Para centralizar a imagem dentro do contêiner */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.profile-pic {
+  width: 100%; /* Faz a imagem preencher o contêiner */
+  height: 100%; /* Faz a imagem preencher o contêiner */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+
 /* 4. HABILIDADES */
 #habilidades h2 {
   text-align: center;
